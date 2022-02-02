@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.login, .register, .dashboard, .book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    input{
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"]{
+        background-color: blue;
+        color: white;
+        border: none;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    span{
+        color: red;
+    }
+}
+
+.dashboard, .book{
+    button{
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+}
+
+button:hover, input[type="submit"]:hover{
+    background-color: #003366;
+    cursor: pointer;
+}
+
+.book{
+    table{
+        margin-bottom: 20px;
+        td{
+            border: 1px solid white;
+            height: 10vh;
+            width: 10vh;
+        }
+        .booked{
+            background-color: red;
+        }
+        .selected{
+            background-color: magenta;
+        }
+        .available:hover{
+            cursor: pointer;
+        }
+    }
+}
